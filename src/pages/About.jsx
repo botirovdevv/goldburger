@@ -55,7 +55,6 @@ function About() {
           </div>
         </div>
       </div>
-      <Form/>
     </section>
   )
 }

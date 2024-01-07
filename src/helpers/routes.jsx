@@ -2,7 +2,7 @@ import Admin from "../pages/Admin";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import Login from "../pages/Login";
-import About from "../pages/About";
+import AboutIndex from "../pages/AboutIndex";
 import News from "../pages/News";
 import Vakansiya from "../pages/Vakansiya";
 
@@ -29,7 +29,7 @@ export const routes = [
 
     {
         path: "/about",
-        element: <About/>
+        element: <AboutIndex/>
     },
 
     {
