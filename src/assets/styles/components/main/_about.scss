@@ -1,0 +1,50 @@
+.about{
+    padding-top: 150px;
+    height: 100%;
+    background-color: #fff;
+    
+    &-title{
+        @include adaptive-value('font-size', 40, 23);
+        font-weight: 600;
+        font-style: normal;
+        text-align: center;
+        color: #000;
+        padding-bottom: 30px;
+    }
+
+    &-info{
+        padding-top: 100px;
+        @include flex(center, space-between);
+        flex-wrap: wrap;
+        gap: 15px
+    }
+
+    &-info__card{
+        @include flex(center, unset);
+        gap: 20px
+    }
+
+    &-info__title{
+        color: #000;
+        @include adaptive-value('font-size', 45, 25);
+        font-weight: 500;
+    }
+
+    &-info__subtitle{
+        color: #333;
+        @include adaptive-value('font-size', 18, 13);
+    }
+
+    &-items{
+        @include flex(start, unset);
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &-icon{
+        background-color: #F6F8F9;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+}

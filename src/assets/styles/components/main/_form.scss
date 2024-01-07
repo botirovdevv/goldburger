@@ -1,0 +1,82 @@
+.form{
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    &-title{
+        margin-bottom: 20px;
+        @include adaptive-value('font-size', 40, 21);
+        font-weight: 600
+    }
+
+    &-content{
+        @include flex(center, space-between);
+        gap: 50px;
+
+        @media screen and (max-width: 768px){
+            flex-direction: column;
+        }
+    }
+
+    &-inputs{
+        @include flex(unset, unset);
+        flex-direction: column;
+        gap: 35px;
+        width: 100%;
+    }
+
+    &-items{
+        @include flex(start, unset);
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &-input{
+        padding: 11px 8px;
+        outline: none;
+        width: 100%;
+        color: #000;
+        @include adaptive-value('font-size', 17, 15);
+        border: 1px solid #FFD700;
+        transition: all 0.2s ease-in-out;
+        &.active{
+            border: 1px solid red;
+
+        }
+    }
+
+    &-input__message{
+        padding: 11px 8px;
+        outline: none;
+        width: 100%;
+        height: 110px;
+        resize: none;
+        color: #000;
+        @include adaptive-value('font-size', 17, 15);
+        border: 1px solid #FFD700;
+        transition: all 0.2s ease-in-out;
+        &.active{
+            border: 1px solid red;
+
+        }
+    }
+
+    &-send__btn{
+        border: 1px solid #FFD700;
+        background-color: transparent;
+        padding: 10px 60px;
+        @include adaptive-value('font-size', 16, 14);
+        border-radius: 4px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            background-color: #FFD700;
+        }
+    }
+
+    &-map{
+        @media screen and (max-width: 768px){
+            width: 100%;
+            height: 400px;
+        }
+    }
+}

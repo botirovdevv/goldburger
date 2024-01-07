@@ -1,0 +1,45 @@
+.error{
+
+    background-color: #fff;
+
+    &-image{
+        @include adaptive-value('width', 430, 300);
+    }
+
+    &-content{
+        @include flex(center, center);
+        height: 100vh;
+        gap: 30px;
+        margin-top: 40px;
+
+        @media screen and (max-width: 640px){
+            flex-direction: column;
+        }
+    }
+
+    &-title{
+        @include adaptive-value('font-size', 40, 23);
+        font-weight: 700;
+        font-style: normal;
+        width: 100%;
+
+        @media screen and (max-width: 640px){
+            text-align: center;
+        }
+    }
+
+    &-items{
+        @include flex(center, center);
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &-link{
+        background-color: #FFD700;
+        padding: 14px;
+        width: 100%;
+        text-align: center;
+        border-radius: 4px;
+        font-weight: 500;
+    }
+}
