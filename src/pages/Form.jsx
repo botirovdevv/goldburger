@@ -61,7 +61,7 @@ const sendMessage = (event) => {
                 <div className="form-map">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1929.0325496211883!2d60.6260820799654!3d41.555697937690034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfc97b1279d9a1%3A0xe88a5f796c717c24!2sGold%20Burger!5e1!3m2!1sru!2s!4v1704567470386!5m2!1sru!2s"
-                        width="600"
+                        width="100%"
                         height="400"
                         style={{ border: '0' }}
                         allowFullScreen=""
