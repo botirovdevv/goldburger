@@ -38,6 +38,7 @@
         color: #000;
         @include adaptive-value('font-size', 17, 15);
         border: 1px solid #FFD700;
+        border-radius: 4px;
         transition: all 0.2s ease-in-out;
         &.active{
             border: 1px solid red;
